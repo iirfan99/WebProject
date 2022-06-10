@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+           
+            <h1>Add Comment....</h1>
+           
+    
+            <br/> <br/>
+            <form action="" method="POST">
+           
+                <div class="form-group">
+            <form method="POST">
+
+             {% crf_token %}
+             {{form.as_p}}
+             <button class="btn
+             btn-secondary" >Add comment</button>
+
+ </div>
+
+
+
+            </form>
+            
+       
+    </div>
+</div>
+{% endblock %}
